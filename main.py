@@ -14,11 +14,23 @@ shopping_list[0] = "банан"
 print (shopping_list)
 b =len(shopping_list)
 print (b)'''
-N= int(input())
+'''N= int(input())
 k = int(input())-1
 people = list(range(1,N+1))
 while len(people) !=1:
     k = k% len(people)
     del people[k]
     k+=2
-    print (people)
+    print (people)'''
+s = input("Введите текст:")
+a = 0
+vowels = set("аеияо")
+for letter in s:
+    if letter in vowels:
+        a += 1
+print("Количество гласных:")
+print(a)
+
+
+
+
