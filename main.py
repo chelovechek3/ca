@@ -37,7 +37,7 @@ elif x =="%" and f!=0:
     myfunc5()
 elif x =="/" and f!=0:
     myfunc6()
-else: print("Вы совершили ошибку в введении данных")"""
+else: print("Вы совершили ошибку в введении данных"""
 """import random
 def myfunc1():
  q = []
@@ -49,7 +49,29 @@ def myfunc1():
   for n in h:
    q.append('.')
   print(h)
-  print(q)
-myfunc1()"""
+  print(q)"""
+"""def bank(K,N,L):
+ T = int(input("Введите количество процентов: "))
+ S = int(input("Введите количество денег: "))
+ E= int(input("Введите количество лет, на которое хотите сделать вклад: "))
+ X = (S*T)/100
+ d=S+E*X
+ c=(K*L)/100
+ q=K+N*c
+ print("Через",E,"лет у вас будет",d,"денег")
+ for i in range (E):
+    S+=X
+    a=S*T/100
+    z=a+T
+    p=(((S+a)*T)/100)
+    print(z+S)
+ #print('Под',L,'%',"годовых")
+ return q
+bank(1000,20,3)"""
+
+
+
+
+
 
 
