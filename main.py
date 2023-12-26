@@ -68,9 +68,22 @@ def myfunc1():
  #print('Под',L,'%',"годовых")
  return q
 bank(1000,20,3)"""
-
-
-
+#Дз на 27.12:
+import time
+def calculate_time(func):
+    def funcc(a):
+        t = time.time()
+        funccc = func(a)
+        t1 = time.time()
+        return funcc, print(round(t1-t,2))
+    return funcc
+@calculate_time
+def some_function(numbers):
+    my_list1 =[]
+    for i in range(1, numbers +1):
+        str_numbers = str(i)
+        my_list1.append(i)
+some_function(int(input()))
 
 
 
