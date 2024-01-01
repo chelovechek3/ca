@@ -69,7 +69,7 @@ def myfunc1():
  return q
 bank(1000,20,3)"""
 #Дз на 27.12:
-import time
+"""import time
 def calculate_time(func):
     def funcc(a):
         t = time.time()
@@ -83,8 +83,12 @@ def some_function(numbers):
     for i in range(1, numbers +1):
         str_numbers = str(i)
         my_list1.append(i)
-some_function(int(input()))
-
+some_function(int(input()))"""
+#Дз на 31.12.2023:
+with open('d.txt', 'r') as input_file, open('X.txt', 'w') as output_file:
+    for line in input_file:
+        parts = line.strip().split(':')
+        output_file.write(':'.join(parts[:2]) + '\n')
 
 
 
